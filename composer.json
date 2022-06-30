@@ -1,0 +1,22 @@
+{
+    "name": "alkemy/sepomex",
+    "autoload": {
+        "psr-4": {
+            "Alkemy\\Sepomex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "christopher trevilla",
+            "email": "christopher.trevilla@alkemy.mx"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alkemy\\Sepomex\\ServiceProvider"
+            ]
+        }
+    }
+}
