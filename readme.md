@@ -19,6 +19,13 @@ Ingresa al archivo ```composer.json``` y debajo del objeto ```require-dev``` esc
 ],
 ```
 
+Tambien agrega lo siguiente en el apartado de ```require```
+
+```json
+ "alkemy/sepomex": "master"
+```
+
+
 Ahora ejecuta el siguiente comando:
 
 ```bash
