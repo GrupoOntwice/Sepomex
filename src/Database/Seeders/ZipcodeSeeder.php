@@ -10,13 +10,6 @@ class ZipcodeSeeder extends Seeder
     {
         $path = __DIR__ . "/../Seeders/cp.sql";
 
-        $user = " -u" . config('database.connections.mysql.username');
-        $password = " -p" . config('database.connections.mysql.password');
-        $host = " -h" . config('database.connections.mysql.host');
-        $database = config('database.connections.mysql.database');
-
-        $command = sprintf("mysql --default-character-set=utf8 %s %s %s %s < %s", $user, $password, $host, $database, $path);
-
-        exec($command);
+        \DB::unprepared(file_get_contents($path));
     }
 }
